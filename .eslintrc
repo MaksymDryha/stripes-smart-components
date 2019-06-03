@@ -1,6 +1,10 @@
 {
   "extends": "@folio/eslint-config-stripes",
   "parser": "babel-eslint",
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  },
   "rules": {
     "max-len": ["warn", { "code": 120 }],
     "operator-linebreak": ["off"],
